@@ -46,7 +46,6 @@ class RealSequenceDataset(torch.utils.data.Dataset):
         self.samples = list(self.samples)
         self.labels = list(self.labels)
 
-        # Optional: print label histogram
         from collections import Counter
         print("Loaded label histogram:", Counter(self.labels))
 
@@ -97,7 +96,7 @@ class RealSequenceDataset_old(torch.utils.data.Dataset):
         self.samples = list(self.samples)
         self.labels = list(self.labels)
 
-        # Optional: print label histogram
+        #print label histogram
         from collections import Counter
         print("Loaded label histogram:", Counter(self.labels))
 

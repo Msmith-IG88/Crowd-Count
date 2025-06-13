@@ -32,8 +32,8 @@ def synth_graphs():
 
 
 def real_graphs():
-   # Parameters matching your dataset
-    data_path = r"C:/Users/smith/Projects/people-gait/room1"
+   # Change to real data path
+    data_path = "" 
     sequence_len = 10
     range_bins = 64
 
@@ -89,7 +89,7 @@ def heat_map():
     plt.show()
 
     # === Real Data ===
-    data_path = r"C:/Users/smith/Projects/people-gait/room1"
+    data_path = ""
     dataset = RealSequenceDataset(root_dir=data_path, bins=range_bins, sequence_len=sequence_len, limit_per_label=1, shuffle=False)
 
     # Grab one real example (e.g., 3 persons)
